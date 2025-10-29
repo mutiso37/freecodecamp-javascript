@@ -115,3 +115,279 @@ console.log("Tangent Value:", tangentValue); // 1
 // Summary
 console.log("Summary of Arithmetic Operations Completed.");
 
+//increement and decrement demonstration
+let a = 10;
+console.log("Initial value of a:", a); // 10
+
+a++;
+console.log("After incrementing, a:", a); // 11
+
+a--;
+console.log("After decrementing, a:", a); // 10
+
+a += 5;
+console.log("After adding 5, a:", a); // 15
+
+a -= 3;
+console.log("After subtracting 3, a:", a); // 12
+
+a *= 2;
+console.log("After multiplying by 2, a:", a); // 24
+
+a /= 4;
+console.log("After dividing by 4, a:", a); // 6
+
+a %= 4;
+console.log("After modulus 4, a:", a); // 2
+
+//compound arithmetic expression
+const compoundResult = ((wholeNumber + 10) * 3 - (decimalNumber / 2)) ** 2;
+console.log("Compound Arithmetic Expression Result:", compoundResult); // 1521.0
+
+let point = 5;
+point += 10; // point = point + 10
+console.log("Point after += 10:", point); // 15
+
+point *= 2; // point = point * 2
+console.log("Point after *= 2:", point); // 30
+
+point -= 5;
+console.log("Point after -= 5:", point); // 25
+
+point /= 5;
+console.log("Point after /= 5:", point); // 5
+
+point %= 3;
+console.log("Point after %= 3:", point); // 2
+
+// End of arithmetic operations demonstration
+
+const result = "60" / "2";
+console.log("Result of '60' / '2':", result);
+console.log("Type of result:", typeof result);
+// Result of '60' / '2': 30
+// Type of result: number
+// The division operator converts string operands to numbers before performing the operation.
+ const result = "6" - "2";
+console.log("Result of '6' - '2':", result);
+console.log("Type of result:", typeof result);
+// Result of '6' - '2': 4
+// Type of result: number
+// The subtraction operator converts string operands to numbers before performing the operation.
+
+    const result = "10" * "3";
+    console.log("Result of '10' * '3':", result);
+    console.log("Type of result:", typeof result);
+    // Result of '10' * '3': 30
+    // Type of result: number
+    // The multiplication operator converts string operands to numbers before performing the operation.
+    
+const result = "20" + "5";
+console.log("Result of '20' + '5':", result);
+console.log("Type of result:", typeof result);
+// Result of '20' + '5': 205
+// Type of result: string
+// The addition operator concatenates string operands instead of converting them to numbers.
+const result = "8" % "3";
+console.log("Result of '8' % '3':", result);
+console.log("Type of result:", typeof result);
+// Result of '8' % '3': 2
+// Type of result: number
+// The modulus operator converts string operands to numbers before performing the operation.
+const result = "16" ** "2";
+console.log("Result of '16' ** '2':", result);
+console.log("Type of result:", typeof result);
+// Result of '16' ** '2': 256
+// Type of result: number
+// The exponentiation operator converts string operands to numbers before performing the operation.
+const result = "50" + 25;
+console.log("Result of '50' + 25:", result);
+console.log("Type of result:", typeof result);
+// Result of '50' + 25: 5025
+// Type of result: string
+// The addition operator concatenates the string and number operands, converting the number to a string.
+
+const result = "100" - 40;
+console.log("Result of '100' - 40:", result);
+console.log("Type of result:", typeof result);
+// Result of '100' - 40: 60
+// Type of result: number
+// The subtraction operator converts the string operand to a number before performing the operation.
+
+const result = "9" * 3;
+console.log("Result of '9' * 3:", result);
+console.log("Type of result:", typeof result);
+// Result of '9' * 3: 27
+// Type of result: number
+// The multiplication operator converts the string operand to a number before performing the operation.
+
+const result = "45" / 5;
+console.log("Result of '45' / 5:", result);
+console.log("Type of result:", typeof result);
+// Result of '45' / 5: 9
+// Type of result: number
+// The division operator converts the string operand to a number before performing the operation.
+
+const result = "30" % 4;
+console.log("Result of '30' % 4:", result);
+console.log("Type of result:", typeof result);
+// Result of '30' % 4: 2
+// Type of result: number
+// The modulus operator converts the string operand to a number before performing the operation.
+
+//string serch and slice operations
+const sampleString = "Hello, welcome to the world of JavaScript programming.";
+
+// Searching for a substring
+const searchTerm = "JavaScript";
+const indexOfSearchTerm = sampleString.indexOf(searchTerm);
+console.log(`Index of "${searchTerm}":`, indexOfSearchTerm); // 31
+
+// Slicing a substring
+const slicedString = sampleString.slice(7, 14);
+console.log("Sliced String:", slicedString); // welcome
+
+// Slicing from a specific index to the end
+const slicedToEnd = sampleString.slice(25);
+console.log("Sliced to End:", slicedToEnd); // the world of JavaScript programming.
+
+// Slicing with negative indices
+const negativeSlice = sampleString.slice(-11);
+console.log("Negative Slice:", negativeSlice); // programming.
+
+// Summary of string search and slice operations
+console.log("String Search and Slice Operations Completed.");
+
+//using.includes() method
+const mainString = "The quick brown fox jumps over the lazy dog.";
+const substring1 = "fox";
+const substring2 = "cat";
+
+// Check if substring1 is present in mainString
+const containsSubstring1 = mainString.includes(substring1);
+console.log(`Does the main string contain "${substring1}"?`, containsSubstring1); // true
+
+// Check if substring2 is present in mainString
+const containsSubstring2 = mainString.includes(substring2);
+console.log(`Does the main string contain "${substring2}"?`, containsSubstring2); // false
+
+// Case-sensitive check
+const caseSensitiveCheck = mainString.includes("The");
+console.log('Does the main string contain "The"?', caseSensitiveCheck); // true
+
+const caseSensitiveCheckLower = mainString.includes("the");
+console.log('Does the main string contain "the"?', caseSensitiveCheckLower); // false
+
+// Summary of includes() method demonstration
+console.log("String includes() Method Demonstration Completed.");
+// The includes() method checks if a substring exists within a string and returns a boolean value.
+const result = "60" / "2";
+console.log("Result of '60' / '2':", result);
+console.log("Type of result:", typeof result);
+// Result of '60' / '2': 30
+// Type of result: number
+// The division operator converts string operands to numbers before performing the operation.
+    const result = "6" - "2";
+    console.log("Result of '6' - '2':", result);
+
+    /*working with slice(), indexOf() and lastIndexOf() methods*/
+
+    console.log("Type of result:", typeof result);
+    // Result of '6' - '2': 4
+    // Type of result: number
+    // The subtraction operator converts string operands to numbers before performing the operation.
+
+    const result = "10" * "3";
+    console.log("Result of '10' * '3':", result);
+    console.log("Type of result:", typeof result);
+    // Result of '10' * '3': 30
+    // Type of result: number
+    // The multiplication operator converts string operands to numbers before performing the operation.
+    
+const result = "20" + "5";
+console.log("Result of '20' + '5':", result);
+console.log("Type of result:", typeof result);
+// Result of '20' + '5': 205
+// Type of result: string
+// The addition operator concatenates string operands instead of converting them to numbers.
+const result = "8" % "3";
+console.log("Result of '8' % '3':", result);
+console.log("Type of result:", typeof result);
+// Result of '8' % '3': 2
+// Type of result: number
+// The modulus operator converts string operands to numbers before performing the operation.
+const result = "16" ** "2";
+console.log("Result of '16' ** '2':", result);
+console.log("Type of result:", typeof result);
+// Result of '16' ** '2': 256
+// Type of result: number
+// The exponentiation operator converts string operands to numbers before performing the operation.
+const result = "50" + 25;
+console.log("Result of '50' + 25:", result);
+console.log("Type of result:", typeof result);
+// Result of '50' + 25: 5025
+// Type of result: string
+// The addition operator concatenates the string and number operands, converting the number to a string.
+
+const result = "100" - 40;
+console.log("Result of '100' - 40:", result);
+console.log("Type of result:", typeof result);
+// Result of '100' - 40: 60
+// Type of result: number
+// The subtraction operator converts the string operand to a number before performing the operation.
+
+const result = "9" * 3;
+console.log("Result of '9' * 3:", result);
+console.log("Type of result:", typeof result);
+// Result of '9' * 3: 27
+// Type of result: number
+// The multiplication operator converts the string operand to a number before performing the operation.
+
+//replacing a string using string.replce
+const originalString = "The sky is blue.";
+const stringToReplace = "blue";
+const replacementString = "clear";
+
+// Using replace() to replace a substring
+const modifiedString = originalString.replace(stringToReplace, replacementString);
+console.log("Original String:", originalString); // The sky is blue.
+console.log("Modified String:", modifiedString); // The sky is clear.
+
+// Demonstrating that only the first occurrence is replaced
+const stringWithMultipleOccurrences = "The cat sat on the mat. The cat is happy.";
+const modifiedMultiple = stringWithMultipleOccurrences.replace("cat", "dog");
+console.log("Original String with Multiple Occurrences:", stringWithMultipleOccurrences);
+console.log("Modified String with Multiple Occurrences:", modifiedMultiple);
+// Original String with Multiple Occurrences: The cat sat on the mat. The cat is happy.
+// Modified String with Multiple Occurrences: The dog sat on the mat. The cat is happy.
+
+//repeating a string using string.repeat()
+const repeatString = "Ha! ";
+const numberOfRepeats = 3;
+const repeatedString = repeatString.repeat(numberOfRepeats);
+console.log("Repeated String:", repeatedString); // Ha! Ha! Ha!
+
+// Summary of replace() and repeat() methods
+console.log("String replace() and repeat() Methods Demonstration Completed.");
+// The replace() method replaces the first occurrence of a specified substring with another substring.
+// The repeat() method creates a new string by repeating the original string a specified number of times.
+
+
+/*using indexOf() and lastIndexOf() methods*/const text = "JavaScript is a versatile language. JavaScript is widely used.";
+
+// Using indexOf() to find the first occurrence of "JavaScript"
+const firstIndex = text.indexOf("JavaScript");
+console.log("First occurrence of 'JavaScript':", firstIndex); // 0
+
+// Using lastIndexOf() to find the last occurrence of "JavaScript"
+const lastIndex = text.lastIndexOf("JavaScript");
+console.log("Last occurrence of 'JavaScript':", lastIndex); //  thirty-six
+
+// Using indexOf() to find a substring that doesn't exist
+const notFoundIndex = text.indexOf("Python");
+console.log("Index of 'Python':", notFoundIndex); // -1
+
+// Summary of indexOf() and lastIndexOf() methods
+console.log("String indexOf() and lastIndexOf() Methods Demonstration Completed.");
+// The indexOf() method returns the index of the first occurrence of a specified substring, or -1 if not found.
+// The lastIndexOf() method returns the index of the last occurrence of a specified substring, or -1 if not found.
